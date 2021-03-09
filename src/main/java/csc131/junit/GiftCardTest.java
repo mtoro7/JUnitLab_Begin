@@ -89,7 +89,7 @@ class GiftCardTest {
 	
 	
 	@Test
-	public void constructor_IncorrectBallance()
+	public void constructor_IllegalValue()
 	{
 		assertThrows(IllegalArgumentException.class, () -> {new GiftCard(1,-100.00);});
 	}
